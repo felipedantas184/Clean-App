@@ -8,7 +8,7 @@ const Sidebar = ({isOpen,toggle}) => {
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
-        <SidebarHeading>MeuProf</SidebarHeading>
+        <SidebarHeading>CARCARÁ</SidebarHeading>
         <SidebarMenu>
           <div></div>
           <li>

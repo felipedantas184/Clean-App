@@ -1,37 +1,41 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { ExtLink, MobileIcon, NavbarBtn, NavbarBtnLink, NavbarContainer, NavbarItem, NavbarLinks, NavbarLogo, NavbarMenu, NavbarWrapper } from "./NavbarStyles";
+import { ExtLink, MobileIcon, LogoWrapper, NavbarBtn, NavbarBtnLink, NavbarContainer, NavbarItem, NavbarLinks, NavbarLogo, NavbarMenu, NavbarWrapper } from "./NavbarStyles";
 import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
 	const [scrollNav, setScrollNav] = useState(false)
-  const changeNav = () => {
-    if(window.scrollY >= 60) {
-      setScrollNav(true)
-    } else {
-      setScrollNav(false)
-    }
-  }
+	const changeNav = () => {
+		if (window.scrollY >= 60) {
+			setScrollNav(true)
+		} else {
+			setScrollNav(false)
+		}
+	}
 
-  useEffect(() => {
-    window.addEventListener('scroll', changeNav)
-  }, [])
+	useEffect(() => {
+		window.addEventListener('scroll', changeNav)
+	}, [])
 
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  }
+	const toggleHome = () => {
+		scroll.scrollToTop();
+	}
 
-	return ( 
+	return (
 		<NavbarContainer scrollNav={scrollNav}>
 			<NavbarWrapper>
+				<LogoWrapper>
+					<Image src="/LogoCarcara.png" alt="A.A.A Carcará Logo" width={50} height={50} />
+				</LogoWrapper>
 				<Link href="/" passHref>
-					<NavbarLogo onClick={toggleHome}>MeuProf</NavbarLogo>
+					<NavbarLogo onClick={toggleHome}>CARCARÁ</NavbarLogo>
 				</Link>
 				<MobileIcon onClick={toggle}>
-					<FaBars color="#fff" />
+					<FaBars color="#D47734" />
 				</MobileIcon>
-				<NavbarMenu>
+				{/*<NavbarMenu>
 					<NavbarItem>
 						<NavbarLinks to='teachers'
           			smooth={true} duration={500} spy={true} exact='true' offset={-60}
@@ -40,7 +44,7 @@ const Navbar = ({ toggle }) => {
 					<NavbarItem>
 						<NavbarLinks to='highlights'
              		smooth={true} duration={500} spy={true} exact='true' offset={-60}
-						>Motivos</NavbarLinks>
+						>Diferenciais</NavbarLinks>
 					</NavbarItem>
 					<NavbarItem>
 						<NavbarLinks to='perks'
@@ -50,7 +54,7 @@ const Navbar = ({ toggle }) => {
 					<NavbarItem>
 						<NavbarLinks to='start'
 								smooth={true} duration={500} spy={true} exact='true' offset={-60}
-						>Enem</NavbarLinks>
+						>Start Enem</NavbarLinks>
 					</NavbarItem>
 
 					<NavbarBtn>
@@ -58,12 +62,12 @@ const Navbar = ({ toggle }) => {
 							<NavbarBtnLink>Contato</NavbarBtnLink>
 						</ExtLink>
 					</NavbarBtn>
-				</NavbarMenu>
-				
-				
+				</NavbarMenu>*/}
+
+
 			</NavbarWrapper>
 		</NavbarContainer>
-		);
+	);
 }
- 
+
 export default Navbar;

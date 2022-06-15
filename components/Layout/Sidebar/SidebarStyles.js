@@ -7,8 +7,8 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #411551;
-  background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(65,21,81,1) 100%);
+  background: #023047;
+	background-image: linear-gradient(to right bottom, #051937, #023047);
   background-size: 120%;
   display: grid;
   align-items: center;
@@ -18,7 +18,7 @@ export const SidebarContainer = styled.aside`
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   left: ${({ isOpen }) => (isOpen ? '0' : '100%')};
 
-  font-family: "Josefin Sans";
+  font-family: 'Kdam Thmor Pro', sans-serif;
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -36,7 +36,9 @@ export const Icon = styled.div`
 `
 export const SidebarHeading = styled.h1`
   font-size: 48px;
-  font-family: 'Josefin Sans';
+  color: #D47734;
+	font-family: 'Campus Personal Use';
+  font-weight: 500;
   text-align: center;
 `
 export const SidebarWrapper = styled.div`
@@ -88,7 +90,7 @@ export const SidebarRoute = styled.p`
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   text-decoration: none;
-  font-family: 'Anton';
+  font-family: 'Kdam Thmor Pro', sans-serif;
   text-transform: uppercase;
 
   &:hover {

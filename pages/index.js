@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Hero from '../components/Hero'
+import Layout from '../components/Layout/Layout'
 
 export default function Home() {
   return (
-    <h1>Clean App</h1>
+    <Layout>
+      <Hero />
+    </Layout>
   )
 }

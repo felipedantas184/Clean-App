@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link as LinkS } from 'react-scroll'
 
 export const NavbarContainer = styled.nav`
-  background: ${({scrollNav}) => (scrollNav ? '#411551' : 'transparent')};
+  background: ${({scrollNav}) => (scrollNav ? '#051937' : 'transparent')};
 	color: #F0EDEE;
-	font-family: 'Josefin Sans';
+	font-family: 'Campus Personal Use';
 	position: sticky;
   top: 0;
 	z-index:10;
@@ -23,22 +23,38 @@ export const NavbarWrapper = styled.div`
 `
 export const NavbarLogo = styled.a`
 	text-decoration: none;
-	color: white;
-	font-weight: 600;
+	color: #FFF;
 	font-size: 26px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 8px;
+  }
 `
-export const MobileIcon = styled.div`
+export const LogoWrapper = styled.div`
   display: none;
+	
+	@media screen and (max-width: 768px) {
+    display: block;
+    cursor: pointer;
+		display: flex;
+  }
+`
+
+export const MobileIcon = styled.div`
+  cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  
+
   @media screen and (max-width: 768px) {
     display: block;
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
-    width: 1.8rem;
+    width: 50px;
     height: 1.8rem;
-  }
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
 `
 export const NavbarMenu = styled.ul`
 	display: flex;

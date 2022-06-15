@@ -1,5 +1,5 @@
-import Document from 'next/document'
-  import { ServerStyleSheet } from 'styled-components'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
   
   export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -26,5 +26,25 @@ import Document from 'next/document'
       } finally {
         sheet.seal()
       }
+    }
+
+    render() {
+      return (
+        <Html lang="pt-br">
+          <Head>
+            <meta charSet="utf-8" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet" />
+            <meta name="theme-color" content="#051937" />
+            <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          </Head>
+          
+          <body>  
+            <Main />
+            <NextScript />
+          </body>
+        </Html>
+      )
     }
   }
