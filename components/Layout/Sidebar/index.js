@@ -1,5 +1,5 @@
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, ExtLink, SidebarHeading } from './SidebarStyles'
-import Link from 'next/link'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, ExtLink, LogoWrapper, SidebarExternalLink } from './SidebarStyles'
+import Image from 'next/image';
 
 const Sidebar = ({isOpen,toggle}) => {
   return (
@@ -7,34 +7,19 @@ const Sidebar = ({isOpen,toggle}) => {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
+      <LogoWrapper>
+        <Image src="/LogoCarcara.png" alt='Logo Carcará' width={70} height={70} />
+      </LogoWrapper>
       <SidebarWrapper>
-        <SidebarHeading>CARCARÁ</SidebarHeading>
         <SidebarMenu>
-          <div></div>
-          <li>
-            <Link href='/#teachers' passHref>
-              <SidebarLink onClick={toggle}>Aulas Particulares</SidebarLink>
-            </Link>
-          </li>
-          <li>
-            <Link href='/' passHref>
-              <SidebarLink onClick={toggle}>Cursos</SidebarLink>
-            </Link>
-          </li>
-          <li>
-            <Link href='/mentoria' passHref>
-              <SidebarLink onClick={toggle}>Mentoria</SidebarLink>
-            </Link>
-          </li>
-          <li>
-            <Link href='/como-funciona' passHref>
-              <SidebarLink onClick={toggle}>Como Funciona</SidebarLink>
-            </Link>
-          </li>
+          <SidebarLink to='discounts' onClick={toggle}>Vantagens</SidebarLink>
+          <SidebarExternalLink href="https://www.instagram.com/aaacarcara/" target="blank" onClick={toggle}>Produtos</SidebarExternalLink>
+          <SidebarExternalLink href="https://www.instagram.com/carcachoppada/" target="blank" onClick={toggle}>Carcachoppada</SidebarExternalLink>
+          <SidebarExternalLink href="https://www.instagram.com/aaacarcara/" target="blank" onClick={toggle}>Instagram</SidebarExternalLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <ExtLink href="https://api.whatsapp.com/send?phone=5586995185757&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20mais%20sobre%20o%20MeuProf.%0APode%20me%20ajudar%3F" target="blank" passHref >
-            <SidebarRoute>Contato</SidebarRoute>
+          <ExtLink href="https://docs.google.com/forms/d/e/1FAIpQLSfMe8neKR43T-vYyPEYdByruInaEHywdsTKDO9qiXA91dMwjQ/viewform" target="blank" passHref >
+            <SidebarRoute>Seja Sócio</SidebarRoute>
           </ExtLink>
         </SideBtnWrap>
       </SidebarWrapper>

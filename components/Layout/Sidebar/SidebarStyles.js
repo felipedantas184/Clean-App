@@ -7,18 +7,19 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #023047;
-	background-image: linear-gradient(to right bottom, #051937, #023047);
-  background-size: 120%;
-  display: grid;
+  background: #051937;
+  background-color: linear-gradient(to right bottom, #051937, #023047);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   top: 0;
-  left: 0;
+  right: 0;
   transition: 0.7s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  left: ${({ isOpen }) => (isOpen ? '0' : '100%')};
+  right: ${({ isOpen }) => (isOpen ? '0' : '100%')};
 
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Graduate', cursive;
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -32,45 +33,67 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 `
-export const SidebarHeading = styled.h1`
-  font-size: 48px;
-  color: #D47734;
-	font-family: 'Campus Personal Use';
-  font-weight: 500;
-  text-align: center;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 32px;
 `
+
 export const SidebarWrapper = styled.div`
   color: #fff;
 `
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(5, 80px);
   text-align: center;
 
   @media  screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(5, 60px);
   }
 `
-export const SidebarLink = styled.div`
+export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
+  transition: 02s ease-in-out;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-
-  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+  -webkit-tap-highlight-color: transparent;
   user-select: none;
 
   &:hover {
-    color: #A334CB;
+    color: #D2593C;
+    transition: 0.2s ease-in-out;
+  }
+`
+export const SidebarExternalLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  list-style: none;
+  transition: 02s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  &:hover {
+    color: #D2593C;
     transition: 0.2s ease-in-out;
   }
 `
@@ -79,28 +102,32 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `
 export const SidebarRoute = styled.p`
-  border-radius: 10px;
-  background: #000;
+  background: #D2593C;
   white-space: nowrap;
-  padding: 14px 64px;
-  color: #F6F6F6;
+  padding: 16px 64px;
+  color: #FFF;
   font-size: 24px;
   outline:  none;
   border: none;
+  border-radius: 16px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.9) 0px 8px 16px -8px;	
 
   &:hover {
-    background: #fff;
+    transition: all 0.2s ease-in-out;
+    background: #D4D4D4;
     color: #010606;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
+	  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 `
 export const ExtLink = styled.a`
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 
   &:not(:last-child) {
     margin-right: 16px;

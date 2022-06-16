@@ -14,8 +14,8 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <Link href='/' passHref onClick={toggleHome}>
-							<SocialLogo>
+            <Link href='/' passHref>
+							<SocialLogo onClick={toggleHome}>
 								CARCARÁ
 							</SocialLogo>
             </Link>
