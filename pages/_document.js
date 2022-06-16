@@ -36,6 +36,8 @@ import { ServerStyleSheet } from 'styled-components'
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
             <meta name="theme-color" content="#051937" />
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           </Head>

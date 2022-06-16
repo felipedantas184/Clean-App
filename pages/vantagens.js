@@ -1,5 +1,5 @@
 import Layout from "../components/Layout/Layout";
-import Perks from "../components/PerksWrapper";
+import Perks from "../components/Perks/PerksWrapper";
 
 const Vantagens = () => {
   return ( 
