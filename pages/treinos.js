@@ -1,5 +1,5 @@
 import Layout from "../components/Layout/Layout";
-import Sports from "../components/SportsWrapper";
+import Sports from "../components/Sports/SportsWrapper/index.js";
 
 const Treinos = () => {
   return ( 

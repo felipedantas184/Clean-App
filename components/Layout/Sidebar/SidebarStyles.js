@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link as LinkS } from 'react-scroll'
 import { FaTimes } from 'react-icons/fa'
 
 export const SidebarContainer = styled.aside`
@@ -52,25 +51,27 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 80px);
+  grid-template-rows: repeat(6, 80px);
   text-align: center;
+  list-style: none;
 
   @media  screen and (max-width: 480px) {
-    grid-template-rows: repeat(5, 60px);
+    grid-template-rows: repeat(6, 60px);
   }
 `
-export const SidebarLink = styled(LinkS)`
+export const SidebarLink = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   text-decoration: none;
   list-style: none;
-  transition: 02s ease-in-out;
+  transition: 0.2s ease-in-out;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
+
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
   user-select: none;
 
   &:hover {

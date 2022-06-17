@@ -119,7 +119,7 @@ export const MenuBlock = styled.div`
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    transform: scale(1.025);
+    transform: scale(1.01);
   }
 `
 export const MenuBlockName = styled.h3`

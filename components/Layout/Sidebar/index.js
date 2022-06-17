@@ -1,7 +1,8 @@
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, ExtLink, LogoWrapper, SidebarExternalLink } from './SidebarStyles'
 import Image from 'next/image';
+import Link from "next/link";
 
-const Sidebar = ({isOpen,toggle}) => {
+const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
@@ -12,10 +13,27 @@ const Sidebar = ({isOpen,toggle}) => {
       </LogoWrapper>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='discounts' onClick={toggle}>Vantagens</SidebarLink>
-          <SidebarExternalLink href="https://www.instagram.com/aaacarcara/" target="blank" onClick={toggle}>Produtos</SidebarExternalLink>
-          <SidebarExternalLink href="https://www.instagram.com/carcachoppada/" target="blank" onClick={toggle}>Carcachoppada</SidebarExternalLink>
-          <SidebarExternalLink href="https://www.instagram.com/aaacarcara/" target="blank" onClick={toggle}>Instagram</SidebarExternalLink>
+          <div></div>
+          <li>
+            <Link href='/loja' passHref>
+              <SidebarLink onClick={toggle}>Produtos</SidebarLink>
+            </Link>
+          </li>
+          <li>
+            <Link href='/carteira-digital' passHref>
+              <SidebarLink onClick={toggle}>Carteirinha</SidebarLink>
+            </Link>
+          </li>
+          <li>
+            <Link href='/vantagens' passHref>
+              <SidebarLink onClick={toggle}>Vantagens</SidebarLink>
+            </Link>
+          </li>
+          <li>
+            <Link href='/treinos' passHref>
+              <SidebarLink onClick={toggle}>Treinos</SidebarLink>
+            </Link>
+          </li>
         </SidebarMenu>
         <SideBtnWrap>
           <ExtLink href="https://docs.google.com/forms/d/e/1FAIpQLSfMe8neKR43T-vYyPEYdByruInaEHywdsTKDO9qiXA91dMwjQ/viewform" target="blank" passHref >

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { FiShoppingBag, FiUsers, FiAward, FiBarChart2 } from 'react-icons/fi' 
 import { HeroContainer, HeroHeading, HeroSubtitle, HeroTextWrapper, HeroWrapper, LogoWrapper, MenuBlock, MenuBlockName, MenuWrapper } from "./HeroStyles";
+import Link from "next/link";
 
 const Hero = () => {
 	return ( 
@@ -15,25 +16,33 @@ const Hero = () => {
 				</HeroTextWrapper>
 				
 				<MenuWrapper>
-					<MenuBlock style={{backgroundColor: '#002C57'}} >
-						<FiShoppingBag size={50} color="#F6F6F6"/>
-						<MenuBlockName>Produtos</MenuBlockName>
-					</MenuBlock>
+					<Link href='loja' passHref>
+						<MenuBlock style={{backgroundColor: '#002C57'}} >
+							<FiShoppingBag size={50} color="#F6F6F6"/>
+							<MenuBlockName>Produtos</MenuBlockName>
+						</MenuBlock>
+					</Link>
 					
-					<MenuBlock style={{backgroundColor: '#00376F'}} >
-						<FiUsers size={50} color="#F6F6F6"/>
-						<MenuBlockName>Carteirinha</MenuBlockName>
-					</MenuBlock>
+					<Link href='carteira-digital' passHref>
+						<MenuBlock style={{backgroundColor: '#00376F'}} >
+							<FiUsers size={50} color="#F6F6F6"/>
+							<MenuBlockName>Carteirinha</MenuBlockName>
+						</MenuBlock>
+					</Link>
 					
-					<MenuBlock style={{backgroundColor: '#004C89'}} >
-						<FiAward size={50} color="#F6F6F6"/>
-						<MenuBlockName>Vantagens</MenuBlockName>
-					</MenuBlock>
+					<Link href='vantagens' passHref>
+						<MenuBlock style={{backgroundColor: '#004C89'}} >
+							<FiAward size={50} color="#F6F6F6"/>
+							<MenuBlockName>Vantagens</MenuBlockName>
+						</MenuBlock>
+					</Link>
 					
-					<MenuBlock style={{backgroundColor: '#005793'}} >
-						<FiBarChart2 size={50} color="#F6F6F6"/>
-						<MenuBlockName>Eventos</MenuBlockName>
-					</MenuBlock>
+					<Link href='treinos' passHref>
+						<MenuBlock style={{backgroundColor: '#005793'}} >
+							<FiBarChart2 size={50} color="#F6F6F6"/>
+							<MenuBlockName>Treinos</MenuBlockName>
+						</MenuBlock>
+					</Link>
 				</MenuWrapper>
 			</HeroWrapper>
 		</HeroContainer>
