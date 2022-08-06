@@ -15,7 +15,7 @@ export const CarouselWrapper = styled.div`
 export const CarouselTitle = styled.h1`
   color: #F6F6F6;
   font-size: 24px; 
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   padding: 0 16px;
   font-weight: 500;
 `

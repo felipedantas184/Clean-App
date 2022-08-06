@@ -17,7 +17,7 @@ export const SportsWrapper = styled.div`
 `
 export const SportsHeading = styled.h1`
   font-size: 32px;
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
 	font-weight: 600;
 	color: #F6F6F6;
 	text-align: center;

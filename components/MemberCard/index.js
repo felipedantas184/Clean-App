@@ -41,7 +41,7 @@ const MemberCard = ({ member }) => {
 						<DoubleGroup>
 							<InfoGroup>
 								<InfoGroupTitle>Validade</InfoGroupTitle>
-								<InfoGroupDescription>Jul/2022</InfoGroupDescription>
+								<InfoGroupDescription>Jan/2023</InfoGroupDescription>
 							</InfoGroup>
 							
 							<InfoGroup>

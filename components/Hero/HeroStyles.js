@@ -54,7 +54,7 @@ export const HeroSubtitle  = styled.h2`
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   color: #F6F6F6;
   text-align: center;
   text-transform: uppercase;
@@ -123,7 +123,7 @@ export const MenuBlock = styled.div`
   }
 `
 export const MenuBlockName = styled.h3`
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   font-size: 18px;
   color: #FFF;
   font-weight: 500;

@@ -14,9 +14,9 @@ export const StoreWrapper = styled.div`
 	margin-right: auto;
   padding: 75px 0 0 0;
 `
-export const StoreHeading = styled.div`
+export const StoreHeading = styled.h1`
   font-size: 32px;
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
 	font-weight: 600;
 	color: #F6F6F6;
 	text-align: center;

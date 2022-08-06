@@ -1,6 +1,6 @@
 export const PerksDataOne = [
   {
-    instagram: '@açaínograu',
+    instagram: '@acainograujockey',
     name: 'Açaí no Grau - Fátima',
     description: '10% OFF.',
     imageUrl: '/profile/acai.jpg',
@@ -77,7 +77,7 @@ export const PerksDataTwo = [
 	{
 		instagram: '@scrub.doctor',
 		name: 'Scrub Doctor',
-		description: '10% OFF e entrega grátis (primeiro pedido).',
+		description: '10% OFF e entrega grátis (1° pedido).',
 		imageUrl: '/profile/scrub.jpg',
 	},
 	{

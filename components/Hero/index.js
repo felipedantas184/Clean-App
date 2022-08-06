@@ -16,28 +16,28 @@ const Hero = () => {
 				</HeroTextWrapper>
 				
 				<MenuWrapper>
-					<Link href='loja' passHref>
+					<Link href='/working' passHref>
 						<MenuBlock style={{backgroundColor: '#002C57'}} >
 							<FiShoppingBag size={50} color="#F6F6F6"/>
 							<MenuBlockName>Produtos</MenuBlockName>
 						</MenuBlock>
 					</Link>
 					
-					<Link href='carteira-digital' passHref>
+					<Link href='/carteira-digital' passHref>
 						<MenuBlock style={{backgroundColor: '#00376F'}} >
 							<FiUsers size={50} color="#F6F6F6"/>
 							<MenuBlockName>Carteirinha</MenuBlockName>
 						</MenuBlock>
 					</Link>
 					
-					<Link href='vantagens' passHref>
+					<Link href='/vantagens' passHref>
 						<MenuBlock style={{backgroundColor: '#004C89'}} >
 							<FiAward size={50} color="#F6F6F6"/>
 							<MenuBlockName>Vantagens</MenuBlockName>
 						</MenuBlock>
 					</Link>
 					
-					<Link href='treinos' passHref>
+					<Link href='/working' passHref>
 						<MenuBlock style={{backgroundColor: '#005793'}} >
 							<FiBarChart2 size={50} color="#F6F6F6"/>
 							<MenuBlockName>Treinos</MenuBlockName>

@@ -34,7 +34,9 @@ const Form = () => {
           </Link>
         </InputWrapper>
 
-        <BecomeMemberButton>Quero Ser Sócio</BecomeMemberButton>
+        <Link href='/vantagens' passHref>
+          <BecomeMemberButton>Vantagens</BecomeMemberButton>
+        </Link>
       </FormWrapper>
     </FormContainer>
   );

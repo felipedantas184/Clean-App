@@ -2,13 +2,10 @@ import styled from "styled-components";
 
 export const MemberCardContainer = styled.section` 
   background: #051937;
-  background-image: linear-gradient(to right bottom, rgba(5, 25, 55, 0.9), rgba(2, 48, 71, 1)), 
-  url("/Cabulosa.png");
-  background-position: center;
-  background-size: cover;
+  background-color: linear-gradient(to right bottom, #051937, #023047);
+  margin-top: -60px;
 	color: #F0EDEE;
 	font-family: 'Campus Personal Use';
-  margin-top: -60px;
 `
 export const MemberCardWrapper = styled.div`
 	max-width: 1100px;
@@ -39,21 +36,11 @@ export const MemberTextWrapper = styled.div`
   }
 `
 export const MemberHeading = styled.h1`
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: #FFF;
-  text-align: center;
-  text-shadow: 5px 5px #000;
-
-  @media screen and (max-width: 768px) {
-    font-size: 48px;
-  }
-
-  @media screen and (max-width: 340px) {
-    font-size: 40px;
-  }
+  font-size: 32px;
+  font-family: 'Graduate';
+	font-weight: 600;
+	color: #F6F6F6;
+	text-align: center;
 `
 
 

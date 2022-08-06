@@ -25,7 +25,7 @@ export const SportsCard = styled.div`
   gap: 8px;
 `
 export const CardTitle = styled.h3`
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   font-size: 24px;
   color: #FFF;
   font-weight: 600;
@@ -43,13 +43,13 @@ export const CardInfoGroup = styled.div`
   margin-bottom: 8px;
 `
 export const CardTopic = styled.p`
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   font-size: 18px;
   color: #FFF;
   font-weight: 600;
 `
 export const CardDescription = styled.p`
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   font-size: 18px;
   color: #FFF;
   font-weight: 500;
@@ -69,7 +69,7 @@ export const JoinButton = styled.button`
   justify-content: center;
   
   color: aliceblue;
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   font-size: 16px;
   font-weight: 400;
 

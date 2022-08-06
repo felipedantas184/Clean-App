@@ -35,10 +35,10 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Link>
           </li>
         </SidebarMenu>
-        <SideBtnWrap>
-          <ExtLink href="https://docs.google.com/forms/d/e/1FAIpQLSfMe8neKR43T-vYyPEYdByruInaEHywdsTKDO9qiXA91dMwjQ/viewform" target="blank" passHref >
-            <SidebarRoute>Seja Sócio</SidebarRoute>
-          </ExtLink>
+        <SideBtnWrap onClick={toggle}>
+          <Link href="/" passHref>
+            <SidebarRoute>Home</SidebarRoute>
+          </Link>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

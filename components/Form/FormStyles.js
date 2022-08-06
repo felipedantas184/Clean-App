@@ -1,11 +1,9 @@
 import styled from "styled-components"; 
 
 export const FormContainer = styled.section` 
-  background-image: linear-gradient(to bottom, rgba(21, 30, 63, 0.9), rgba(21, 30, 63, 1)), 
-  url("/Cabulosa.png");
-  background-position: center;
-  background-size: cover;
-  background-color: #151E3F;
+  background: #051937;
+  background-color: linear-gradient(to right bottom, #051937, #023047);
+  margin-top: -60px;
 	color: #F0EDEE;
 	font-family: 'Campus Personal Use';
   margin-top: -60px;
@@ -39,28 +37,17 @@ export const TextWrapper = styled.div`
   }
 `
 export const Heading = styled.h1`
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: #FFF;
-  text-align: center;
-  text-shadow: 5px 5px #000;
-
-  @media screen and (max-width: 768px) {
-    font-size: 44px;
-  }
-
-  @media screen and (max-width: 340px) {
-    font-size: 40px;
-  }
+  font-size: 32px;
+  font-family: 'Graduate';
+	font-weight: 600;
+	color: #F6F6F6;
+	text-align: center;
 `
-export const Subtitle  = styled.p`
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.3;
-  font-family: 'Rubik';
-  color: #E1E2E3;
+export const Subtitle  = styled.h2`
+  color: #E2E3E4;
+  font-size: 24px; 
+  font-family: 'Graduate';
+
   text-align: center;
 	margin-top: 16px;
 
@@ -109,6 +96,9 @@ export const InputWrapper = styled.div`
   background: rgba(21, 30, 63, 0.5);
 	margin-top: -24px;
 	border-radius: 16px;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 
   &:after {
     content: "";
@@ -222,7 +212,10 @@ export const BecomeMemberButton = styled.button`
   z-index: 1;
 
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
-
+  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  
   &:hover {
     background-color: #000;
     color: #F6F6F6;

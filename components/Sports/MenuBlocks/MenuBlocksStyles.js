@@ -44,7 +44,7 @@ export const MenuBlock = styled.div`
   }
 `
 export const MenuBlockName = styled.h3`
-  font-family: 'Graduate', cursive;
+  font-family: 'Graduate';
   font-size: 18px;
   color: #FFF;
   font-weight: 500;

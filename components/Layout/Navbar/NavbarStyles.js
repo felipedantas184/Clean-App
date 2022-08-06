@@ -25,6 +25,10 @@ export const NavbarLogo = styled.a`
 	text-decoration: none;
 	color: #FFF;
 	font-size: 26px;
+  cursor: pointer;
+  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 
   @media screen and (max-width: 768px) {
     margin-top: 8px;
@@ -32,6 +36,11 @@ export const NavbarLogo = styled.a`
 `
 export const LogoWrapper = styled.div`
   display: none;
+
+  cursor: pointer;
+  
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
 	
 	@media screen and (max-width: 768px) {
     display: block;
