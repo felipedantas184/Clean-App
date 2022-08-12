@@ -47,7 +47,7 @@ export const MemberHeading = styled.h1`
 //--------New Changes--------//
 export const InfoMemberCardWrapper = styled.div`
   background: #18114D;
-  background: linear-gradient(225deg, #00A1FF 0%, #18114D 60%);
+  background: linear-gradient(225deg, #D47734 0%, #18114D 60%);
 
   background-size: 200% auto;
   animation: gradient 15s linear infinite;
