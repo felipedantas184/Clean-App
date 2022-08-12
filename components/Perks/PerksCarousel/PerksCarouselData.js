@@ -5,6 +5,12 @@ export const PerksDataOne = [
     description: '10% OFF.',
     imageUrl: '/profile/acai.jpg',
   },
+	{
+    instagram: '@duckbill.teresina',
+    name: 'DuckBill',
+    description: '15% OFF.',
+    imageUrl: '/profile/duckbill.png',
+  },
   { 
     instagram: '@maisbrazilianburger',
     name: '+Brazilian Burger',
@@ -73,12 +79,6 @@ export const PerksDataTwo = [
 		name: 'Medoutor',
 		description: '10% OFF no kit sutura.',
 		imageUrl: '/profile/medoutor.jpg',
-	},
-	{
-		instagram: '@scrub.doctor',
-		name: 'Scrub Doctor',
-		description: '10% OFF e entrega grátis (1° pedido).',
-		imageUrl: '/profile/scrub.jpg',
 	},
 	{
 		instagram: '@scrub.on',

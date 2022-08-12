@@ -15,7 +15,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <div></div>
           <li>
-            <Link href='/loja' passHref>
+					  <Link href='/working' passHref>
               <SidebarLink onClick={toggle}>Produtos</SidebarLink>
             </Link>
           </li>
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Link>
           </li>
           <li>
-            <Link href='/treinos' passHref>
+					  <Link href='/working' passHref>
               <SidebarLink onClick={toggle}>Treinos</SidebarLink>
             </Link>
           </li>
