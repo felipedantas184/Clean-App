@@ -161,6 +161,34 @@ export const MembersData = [
     imageUrl: '/members/dianna_paz.jpeg'
   },
   {
+    name: 'Dimitri Ribeiro Alves',
+    registration: '20229043110',
+    document: '3699376',
+    class: '100',
+    imageUrl: '/members/dimitri.JPG'
+  },
+  {
+    name: 'Eric Marcelo Dias da Silva',
+    registration: '20229034908',
+    document: '4.093.219',
+    class: '100',
+    imageUrl: '/members/eric_marcelo.jpeg'
+  },
+  {
+    name: 'Erika Lorrainy Nascimento e Silva',
+    registration: '20229036715',
+    document: '3638047',
+    class: '100',
+    imageUrl: '/members/erika.jpeg'
+  },
+  {
+    name: 'Expedito Castelo Branco Macedo',
+    registration: '20229043380',
+    document: '3995774',
+    class: '100',
+    imageUrl: '/members/expedito_castelo.jpg'
+  },
+  {
     name: 'Ezequiel Marcos de Sousa Rocha',
     registration: '20179142188',
     document: '3454011',
@@ -280,6 +308,13 @@ export const MembersData = [
     imageUrl: '/members/guilherme_ferreira.jpeg'
   },
   {
+    name: 'Guilherme dos Reis Melo',
+    registration: '20229037702',
+    document: '5993631',
+    class: '100',
+    imageUrl: '/members/guilherme_melo.png'
+  },
+  {
     name: 'Guilherme Victor Antas Cronemberger',
     registration: '20209050468',
     document: '4144368',
@@ -378,11 +413,32 @@ export const MembersData = [
     imageUrl: '/members/jonas_leite.jpg'
   },
   {
-    name: 'Jose Laurindo da Silva Neto',
+    name: 'José Fortes Napoleão do Rêgo Neto',
+    registration: '20229043326',
+    document: '3640497',
+    class: '100',
+    imageUrl: '/members/jose_fortes.jpg'
+  },
+  {
+    name: 'José Laurindo da Silva Neto',
     registration: '20199038187',
     document: '2.802.786',
     class: '94',
     imageUrl: '/members/jose_laurindo.jpeg'
+  },
+  {
+    name: 'Julia Arêa Leão Ayres de Sousa',
+    registration: '20229035020',
+    document: '3406768',
+    class: '100',
+    imageUrl: '/members/julia_area_leao.jpeg'
+  },
+  {
+    name: 'Júlia Pimentel Santos',
+    registration: '20229034971',
+    document: '3659072',
+    class: '100',
+    imageUrl: '/members/julia_pimentel.jpg'
   },
   {
     name: 'Kaio Danillo Veloso Leal',
@@ -574,6 +630,13 @@ export const MembersData = [
     imageUrl: '/members/paulo_airton.jpeg'
   },
   {
+    name: 'Pedro Arthur Aguiar Sales',
+    registration: '20229042928',
+    document: '4085297',
+    class: '100',
+    imageUrl: '/members/pedro_arthur_aguiar.jpeg'
+  },
+  {
     name: 'Pedro Gabriel Rebelato Pertence',
     registration: '20189014889',
     document: '3922066',
@@ -593,6 +656,13 @@ export const MembersData = [
     document: '3695154',
     class: '96',
     imageUrl: '/members/pedro_henrique_ximenes.jpg'
+  },
+  {
+    name: 'Rafael Armando Coutinho Aguiar',
+    registration: '20229036090',
+    document: '4.790.050',
+    class: '100',
+    imageUrl: '/members/rafael_aguiar.jpg'
   },
   {
     name: 'Raimundo Nonato Marques Filho',
@@ -651,6 +721,13 @@ export const MembersData = [
     imageUrl: '/members/teresinha_raquel.jpeg'
   },
   {
+    name: 'Thaynar Cavalcante Batista',
+    registration: '20229035100',
+    document: '4100757',
+    class: '100',
+    imageUrl: '/members/thaynar.png'
+  },
+  {
     name: 'Tiago José do Nascimento Teixeira Leite',
     registration: '20209050065',
     document: '3.763.442',
@@ -663,6 +740,13 @@ export const MembersData = [
     document: '2799506',
     class: '90',
     imageUrl: '/members/valberto_filho.jpeg'
+  },
+  {
+    name: 'Valéria Feitosa Ferreira',
+    registration: '20229035119',
+    document: '3031535',
+    class: '100',
+    imageUrl: '/members/valeria_feitosa.jpg'
   },
   {
     name: 'Vilena Marjana Bezerra Pereira',
